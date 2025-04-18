@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SARK Group of Institute NEB Chemistry Hub</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo">SARK Group of Institute</div>
+            <div class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </div>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#courses">Courses</a></li>
+                <li><a href="#resources">Resources</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="hero">
+        <div class="hero-content">
+            <h1>Your Chemistry, Our Mission</h1>
+            <h2>Led by Gagan Bhandari</h2>
+            <p>Making Chemistry simple, structured, and accessible for every NEB Class-12 student</p>
+            <div class="cta-buttons">
+                <a href="#courses" class="btn primary">Start Learning</a>
+                <a href="#resources" class="btn secondary">View Lectures</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="about">
+        <div class="container">
+            <div class="profile-header">
+                <h2>👤 Meet Your CEO — Gagan Bhandari</h2>
+                <div class="profile-badge">
+                    <span>🎓 +2 Running</span>
+                </div>
+            </div>
+            <div class="profile-content">
+                <div class="profile-image">
+                    <img src="https://scontent.fpkr3-1.fna.fbcdn.net/v/t39.30808-6/490765188_1366658094752928_1527313585345970234_n.jpg?_nc_cat=104&ccb=1-7&_nc_sid=127cfc&_nc_eui2=AeGbCTKxqYBapnMmzdnR9U5doVPUtv71-VChU9S2_vX5UOJmIZySNdp7H-6hbQ8GpxtLrWX3iZLjnM7Tyc38PJ4i&_nc_ohc=TMKXZLYDHr4Q7kNvwHXvve_&_nc_oc=AdnSfAzKxL7qPKhiOGxftAbfUYosrQ5G_Za1s7PPbEn7RfedAomwGFvRWvygydwU9NQB7E_3R4ZHHZWY1U4yNjxS&_nc_zt=23&_nc_ht=scontent.fpkr3-1.fna&_nc_gid=R76I36zkedEQSAP73lDEdg&oh=00_AfEBXVaIUTsnaAYaeK1ndzTFMqgeYyKsk8JzWajeTemPaw&oe=6807D111" alt="Gagan Bhandari, CEO of SARK Group of Institute" class="profile-img">
+                </div>
+                <div class="profile-info">
+                    <p class="profile-description">
+                        Hello! I'm Gagan Bhandari, a passionate learner, nature lover, and the proud CEO of this platform. 
+                        Currently pursuing my +2, I believe in creating positive vibes and living life close to nature's beauty. 
+                        My journey is about blending dreams, dedication, and innovation, while inspiring others to embrace life's 
+                        simple joys and natural wonders.
+                    </p>
+                    <p class="profile-description">
+                        I always look forward to making good vibes, connecting with people, and spreading positivity wherever I go. 
+                        Life's about growing, enjoying, and leaving a meaningful impact — and that's exactly what I aim for every day.
+                    </p>
+                    <div class="contact-info">
+                        <p><i class="fas fa-phone"></i> Phone: +977-9823458131</p>
+                        <p><i class="fas fa-envelope"></i> Email: aakashbhandari1000@gmail.com</p>
+                        <div class="social-links">
+                            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="features" class="features">
+        <div class="container">
+            <h2>✨ Why Choose Us?</h2>
+            <div class="feature-grid">
+                <div class="feature-card">
+                    <i class="fas fa-video"></i>
+                    <h3>100+ Organized Chemistry Video Lectures</h3>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <h3>Learn From Top Educators</h3>
+                    <p>Rohan Sir, Aashish Sir, Ram Sir</p>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-file-pdf"></i>
+                    <h3>Downloadable Notes & Important Questions</h3>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-mobile-alt"></i>
+                    <h3>Clean, Fast, Mobile-Friendly Platform</h3>
+                </div>
+                <div class="feature-card">
+                    <i class="fas fa-unlock"></i>
+                    <h3>Free & Open Access for Everyone</h3>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="courses" class="courses">
+        <div class="container">
+            <h2>🎬 Start Learning Today!</h2>
+            <div class="course-categories">
+                <div class="category-card" onclick="showVideos('applied')">
+                    <h3>Applied Chemistry</h3>
+                    <div class="videos-container" id="applied-videos">
+                        <div class="loading"></div>
+                    </div>
+                </div>
+                <div class="category-card" onclick="showVideos('organic')">
+                    <h3>Organic Chemistry</h3>
+                    <div class="videos-container" id="organic-videos">
+                        <div class="loading"></div>
+                    </div>
+                </div>
+                <div class="category-card" onclick="showVideos('inorganic')">
+                    <h3>Inorganic Chemistry</h3>
+                    <div class="videos-container" id="inorganic-videos">
+                        <div class="loading"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>📞 Contact Us</h2>
+            <div class="contact-info">
+                <p><i class="fas fa-phone"></i> Phone: +977-9823458131</p>
+                <p><i class="fas fa-envelope"></i> Email: aakashbhandari1000@gmail.com</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 SARK Group Of Institue  NEB Chemistry Hub. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <div class="scroll-top">
+        <i class="fas fa-arrow-up"></i>
+    </div>
+
+    <!-- Video Modal -->
+    <div id="videoModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <div class="video-player-container">
+                <iframe id="videoPlayer" width="560" height="315" src="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html> 
